@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/black"
+    tools:context="com.example.randy.arknoid.MainActivity">
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_name"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/font_large"
+        android:textColor="@color/white"
+        android:paddingBottom="16dip"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_classic_mode"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn_classic_mode"
+        android:onClick="gotoclassicgamemode"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/btn_one_player"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_one_player"
+        android:onClick="gotooneplayergamemode"
+        android:layout_below="@+id/btn_classic_mode"
+        android:layout_alignLeft="@+id/btn_classic_mode"
+        android:layout_alignStart="@+id/btn_classic_mode"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/btn_two_player"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_two_player"
+        android:onClick="gototwoplayergamemode"
+        android:layout_below="@+id/btn_one_player"
+        android:layout_alignLeft="@+id/btn_one_player"
+        android:layout_alignStart="@+id/btn_one_player"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/btn_bluetooth_mode"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_bluetooth_mode"
+        android:onClick="gotobluetoothgamemode"
+        android:layout_below="@+id/btn_two_player"
+        android:layout_alignLeft="@+id/btn_two_player"
+        android:layout_alignStart="@+id/btn_two_player"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btn_game_setting"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_game_setting"
+        android:layout_below="@+id/btn_bluetooth_mode"
+        android:layout_alignLeft="@+id/btn_bluetooth_mode"
+        android:layout_alignStart="@+id/btn_bluetooth_mode"
+        android:onClick="GotoSettingActivity"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Group_name"
+        android:textSize="@dimen/font_small"
+        android:textColor="#e4c900"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

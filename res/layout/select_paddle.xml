@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_paddle"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView2" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/textView2"
+        android:id="@+id/red_btn_layout">
+        <ImageButton
+            android:id="@+id/select_paddle_red"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"
+            android:src="@drawable/red_paddle"
+            android:onClick="select_red_paddle"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/red_paddle"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/textView2"
+        android:id="@+id/yellow_btn_layout">
+        <ImageButton
+            android:id="@+id/select_paddle_yellow"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"
+            android:src="@drawable/yellow_paddle"
+            android:onClick="select_yellow_paddle"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yellow_paddle"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/red_btn_layout">
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"
+            android:src="@drawable/blue_paddle"
+            android:onClick="select_blue_paddle"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blue_paddle"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/yellow_btn_layout">
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"
+            android:src="@drawable/green_paddle"
+            android:onClick="select_green_paddle"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/green_paddle"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

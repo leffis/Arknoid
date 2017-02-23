@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Arknoid</string>
+    <string name="btn_start_game">START</string>
+    <string name="btn_classic_mode">CLASSIC</string>
+    <string name="btn_one_player">ONE PLAYER</string>
+    <string name="btn_two_player">2 PLAYER</string>
+    <string name="btn_bluetooth_mode">BLUETOOTH BATTLE</string>
+    <string name="btn_game_setting">SETTING</string>
+    <string name="TMP_game_setting">This is SETTING</string>
+    <string name="Group_name">CZZY\nChenyao Yang|Zihan Zhu|Chenhui Zhang|Linxuan Cao</string>
+    <string name="select_paddle">Select your paddle</string>
+    <string name="red_paddle">This is a red paddle</string>
+    <string name="yellow_paddle">This is a yellow paddle</string>
+    <string name="blue_paddle">This is a blue paddle</string>
+    <string name="green_paddle">This is a green paddle</string>
+</resources>
